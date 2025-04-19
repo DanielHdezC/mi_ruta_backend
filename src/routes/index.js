@@ -1,6 +1,9 @@
 import express from 'express';
-import { obtenerCercanas } from '../controllers/combisController.js';
+import { getCombisCercanas } from '../controllers/traccarController.js';
 
 const router = express.Router();
-router.get('/combis-cercanas', obtenerCercanas);
+
+router.get('/combis-cercanas', getCombisCercanas);
+
 export default router;
+
